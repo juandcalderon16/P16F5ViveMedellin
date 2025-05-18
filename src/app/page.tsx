@@ -1,10 +1,13 @@
 import React from 'react'
-import Buttons from '@/app/components/Atoms/Buttons/page'
-import Cards from '@/app/components/Organismos/Cards/page'
-import Desplegable from '@/app/components/Organismos/Desplegable/page'
-import { MediumTitle } from '@/app/components/Atoms/Titles/page'
-import { HeroTitle } from '@/app/components/Atoms/Titles/page'
-const Page = () => {
+import Buttons from '@/app/components/Atoms/Buttons/index'
+import Cards from '@/app/components/Organismos/Cards/index'
+import Desplegable from '@/app/components/Organismos/Desplegable/index'
+import { MediumTitle } from '@/app/components/Atoms/Titles/index'
+import { HeroTitle } from '@/app/components/Atoms/Titles/index'
+import Image from 'next/image';
+
+ 
+const Index = () => {
   return (
     <div>
       <div className='flex justify-center items-center h-screen w-screen bg-gray-100'>
@@ -17,11 +20,15 @@ const Page = () => {
           
 
           <div className='flex flex-row gap-4 mt-4 w-full max-w-2xl'>
-            <img
+            <Image
               src="/festival2.avif"
               alt="concierto"
-              className='rounded-2xl w-[183px] h-[141px] object-cover border-2' style={{ borderColor: '#043D74' }}
+              width={183}
+              height={141}
+              className="rounded-2xl object-cover border-2"
+              style={{ borderColor: '#043D74' }}
             />
+
             <p className='text-black'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
@@ -45,4 +52,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default Index

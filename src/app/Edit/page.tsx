@@ -1,9 +1,10 @@
 import React from 'react'
-import Buttons from '@/app/components/Atoms/Buttons/page'
-import Cards from '@/app/components/Organismos/Cards/page'
+import Buttons from '@/app/components/Atoms/Buttons/index'
+import Cards from '@/app/components/Organismos/Cards/index'
+import Image from 'next/image';
 
 
-const Page = () => {
+const Index = () => {
   return (
     <div>
       <div className='flex justify-center items-center h-screen w-screen bg-gray-100'>
@@ -11,7 +12,13 @@ const Page = () => {
           <div className=' flex flex-row gap-4 p-2 w-full max-w-2xl min-h-64'>
 
             <div className=' flex justify-center items-start'>
-              <img src="/festival2.avif" alt="concierto" className='rounded-2xl'/>
+              <Image
+                src="/festival2.avif"
+                alt="concierto"
+                width={400} // ajusta el tamaño según lo necesites
+                height={300}
+                className="rounded-2xl"
+              />
             </div>
 
             <div className='flex justify-center items-start border-black'>
@@ -32,4 +39,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default Index

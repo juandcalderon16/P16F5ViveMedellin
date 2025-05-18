@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Page = () => {
+const Index = () => {
   return (
     <div>Borrar comentarios</div>
   )
 }
 
-export default Page
+export default Index
