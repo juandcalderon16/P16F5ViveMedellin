@@ -30,7 +30,7 @@ const Index = () => {
             />
 
             <p className='text-black'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provenza Rumba KarolG
             </p>
           </div>
 
